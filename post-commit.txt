@@ -1,0 +1,5 @@
+#!/bin/sh
+	curl  - -user  xxxxxx:yyyyyyyyyy   http://localhost:8080/job/dockerdemo/build?token=dockerdemp6789
+
+/users/name/git/DockerDemo/BuildExcutable
+Echo “ dockerdemo test”
