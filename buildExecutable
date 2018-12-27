@@ -1,6 +1,6 @@
 ﻿cd /
-cd /users/name/git/Dockerdemo/buildExecutable
+cd /e/ci_project/auto_deploy/buildExecutable
 docker stop helloworld
 docker rm  helloworld
-docker build –t hello-world  /users/name/git/Dockerdemo/
-docker run –d  - - name helloworld –p 80:80 –v /users/name/git/Dockerdemo/src/:/var/www/html hello-world
+docker build  –t hello-world  /e/ci_project/auto_deploy
+docker run –d  --name helloworld –p 80:80 –v /e/ci_project/auto_deploy/src/:/var/www/html hello-world
