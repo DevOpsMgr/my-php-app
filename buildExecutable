@@ -1,6 +1,6 @@
-﻿cd /
-cd /e/ci_project/auto_deploy/buildExecutable
+﻿
+cd /D "e:\ci_project\auto_deploy\"
 docker stop helloworld
 docker rm  helloworld
-docker build  –t hello-world  /e/ci_project/auto_deploy
-docker run –d  --name helloworld –p 5000:80 –v /e/ci_project/auto_deploy/src/:/var/www/html hello-world
+docker build  –t hello-world  -f e:/ci_project/auto_deploy
+REM docker run –d  --name helloworld –p 5000:80 –v "e:/ci_project/auto_deploy/src/":/var/www/html hello-world
